@@ -20,8 +20,8 @@ from oauth2client import file, client, tools
 # If modifying these scopes, delete the file token.json.
 SCOPES = 'https://www.googleapis.com/auth/calendar.readonly'
 
-# Change following path with your /PATH_TO_TOKEN/token.json
-store = file.Storage('/home/isin/Programs/i3blocks/ialtinkaya/gcalendar/token.json')
+# Change following path with your /PATH_TO_FILE/token.json
+store = file.Storage('/PATH_TO_FILE/token.json')
 creds = store.get()
 if not creds or creds.invalid:
     flow = client.flow_from_clientsecrets('credentials.json', SCOPES)

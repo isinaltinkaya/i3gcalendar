@@ -37,17 +37,18 @@ events = events_result.get('items', [])
 if not events:
     print('No upcoming events')
     print('No upcoming events')
-
-for event in events:
-    start = event['start'].get('dateTime', event['start'].get('date'))
-
-if int(start[8:10]) == int(datetime.datetime.now().strftime('%d')) and int(start[5:7]) == int(datetime.datetime.now().strftime('%m')):
-    date_info = "Today"
-elif int(start[8:10]) == int(datetime.datetime.now().strftime('%d'))+1 and int(start[5:7]) == int(datetime.datetime.now().strftime('%m')):
-    date_info = "Tomorrow"
 else:
-    date_info = "on " + start[8:10] + "." + start[5:7]
+    for event in events:
+        start = event['start'].get('dateTime', event['start'].get('date'))
 
-print(date_info, "at",  start[11:16], event['summary'])
-print(date_info, "at",  start[11:16], event['summary'])
+    if int(start[8:10]) == int(datetime.datetime.now().strftime('%d')) and int(start[5:7]) == int(datetime.datetime.now().strftime('%m')):
+        date_info = "Today"
+    elif int(start[8:10]) == int(datetime.datetime.now().strftime('%d'))+1 and int(start[5:7]) == int(datetime.datetime.now().strftime('%m')):
+        date_info = "Tomorrow"
+    else:
+        date_info = "on " + start[8:10] + "." + start[5:7]
+
+    print(date_info, "at",  start[11:16], event['summary'])
+    print(date_info, "at",  start[11:16], event['summary'])
+
 print(" ")

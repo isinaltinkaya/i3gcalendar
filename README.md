@@ -14,4 +14,4 @@ label=
 
 interval=3600
 
-PS: You have to chage line 24 in the python code with your /PATH_TO_FILE/token.json
+PS: You have to chage line 21 in the python code with your /PATH_TO_FILE/token.json

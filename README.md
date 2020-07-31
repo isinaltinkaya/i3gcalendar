@@ -11,6 +11,7 @@ You need to install some libraries:
 ```
 python3 -m pip install google-api-python-client
 python3 -m pip install oauth2client
+python3 -m pip install httplib2
 ```
 
 You may also need to make the script executable using:

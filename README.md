@@ -14,4 +14,12 @@ label=
 
 interval=3600
 
-PS: You have to chage line 21 in the python code with your /PATH_TO_FILE/token.json
+## Prerequisites:
+
+You have to chage line 21 in the python code with your /PATH_TO_FILE/token.json
+
+You need to install some libraries:
+`python3 -m pip install google-api-python-client`
+`python3 -m pip install oauth2client`
+
+

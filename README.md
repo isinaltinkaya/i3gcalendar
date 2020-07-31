@@ -13,3 +13,5 @@ command=/PATH_TO_SCRIPT_AND_TOKEN/gcalendar.py token.json
 label=
 
 interval=3600
+
+PS: You have to chage line 24 in the python code with your /PATH_TO_FILE/token.json

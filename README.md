@@ -5,7 +5,9 @@ A script to see the closest event in your Google Calendar on your i3blocks bar.
 ## Prerequisites:
 
 You have to chage line 21 in the python code with your /PATH_TO_FILE/token.json
+
 To generate the token.json needed, just run the Python script. It will open a new tab in your default browser and ask you to authenticate.
+
 You may need to install some libraries:
 
 ```
